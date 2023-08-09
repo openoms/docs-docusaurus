@@ -1,41 +1,30 @@
-# Website
+# Galoy Dev Docs
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+* This is the source code for the Galoy Dev Docs website, available at https://dev.galoy.io
+* Built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+* The deployed version is in the `gh-pages` branch.
 
+## Local development
 ### Installation
-
+* requires:
+    * git
+    * nodejs
+    * yarn
+* download the repo and install the dependencies:
 ```
-$ yarn
+git clone https://github.com/GaloyMoney/dev.galoy.io
+cd dev.galoy.io
+yarn
 ```
-
-### Local Development
-
+### Start the local development server
 ```
-$ yarn start
+yarn start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+## Deploy changes
 
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+When done editing the docs open a pull request.
+* The GitHub Action configured to run when the PR is opened will check for errors.
+* Once the PR is merged the changes will be automatically deployed to the `gh-pages` branch and will be available at https://dev.galoy.io
