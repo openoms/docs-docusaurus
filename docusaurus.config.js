@@ -74,9 +74,15 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'quickstartSidebar',
             position: 'left',
-            label: 'Tutorials',
+            label: 'Quickstart',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'videosSidebar',
+            position: 'left',
+            label: 'Videos',
           },
           {
             href: 'https://www.blink.sv/en/blog',
@@ -97,7 +103,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Getting Started',
+                label: 'Quickstart',
                 to: '/docs/getting-started',
               },
             ],

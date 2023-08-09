@@ -41,5 +41,3 @@ yarn build
 ```
 
 This will build the app for production under a `build` folder. It will bundle React in production mode and optimize the build for the best performance. The build will be minified, and the bundled files will include unique hashes in their names.
-
-\
